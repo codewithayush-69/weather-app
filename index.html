@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="one">
+            <h1>find my weather</h1>
+        </div>
+        <img src="Picsart_25-03-30_17-03-12-888.png" alt="clouds">
+    </div>
+    <div class="container">
+        <div class="input-container">     
+            <input type="text" id="city" list="suggestion" placeholder="Enter city name">
+            <datalist id="suggestion"></datalist>
+            <button id="getWeather">Get Weather</button>
+        </div>
+            <div class="loading">
+                <p id="progress-msg"></p>
+                <progress id="progress" max="100"></progress>
+            </div>
+        <div id="weatherResult">
+            <ul>
+                <div class="city-name"></div>
+                <li><p id="humidity">Humidity</p></li>
+                <li><p id="wind-speed">Wind Speed</p></li>
+                <li><p id="temperature">Temperature</p></li>
+            </ul> 
+        </div>
+        <br>
+        <button id="getCurrentLocation">Use Current Location</button>
+        <br>
+        <div class="forecast-container">
+            <p class="forecast-msg">7 Day's Forecast </p>
+            <div class="forecast-data"></div>
+        </div>    
+</body>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</html>
